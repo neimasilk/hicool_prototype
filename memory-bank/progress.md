@@ -1,0 +1,1 @@
+Project IndoChain initialized. Proposal and PRD are complete. First baby-steps for architecture definition, repository setup, and detailed user flow development have been planned in `papan-proyek.md`.

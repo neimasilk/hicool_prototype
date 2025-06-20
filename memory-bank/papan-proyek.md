@@ -1,15 +1,16 @@
 # Papan Proyek
 
 ## Status
-Ringkasan progres terakhir dari `progress.md`.
+Project IndoChain is in the initial phase. The business proposal and product requirements document (PRD) are defined. The Vibe Coding framework is set up. The project is ready for the first set of architectural and foundational development tasks. `architecture.md` and `progress.md` are currently empty.
 
 ## Baby-Step (Tugas Kecil)
 
-| ID  | Deskripsi Tugas                                  | Assignee | Kriteria Tes                                      | Status Sekarang |
-|-----|--------------------------------------------------|----------|---------------------------------------------------|-----------------|
-| T1  | Contoh: Implementasi Fungsi A                    | Budi     | Fungsi A mengembalikan nilai X saat input Y     | To Do           |
-| T2  | Contoh: Buat Komponen UI B                       | AgentCody| Komponen B menampilkan data Z dengan benar        | To Do           |
-| T3  | ...                                              | ...      | ...                                               | ...             |
+| ID  | Deskripsi Tugas                                  | Assignee                 | Kriteria Tes                                                                                                                                                                                                                            | Status Sekarang |
+|-----|--------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+| T1  | Define Core Technical Architecture. Berdasarkan `proposal.md` dan `spesifikasi-produk.md`, garis besar arsitektur teknis inti. Ini termasuk memilih platform blockchain spesifik (dari opsi BSN), teknologi database, dan bahasa/framework backend/frontend utama. Dokumentasikan ini di `memory-bank/architecture.md`. | Adnan Zulkarnain         | `architecture.md` diisi dengan pilihan awal dan justifikasi untuk platform blockchain, database, bahasa/framework backend, dan framework aplikasi seluler frontend. Komponen utama (Dompet Digital, Penerbitan Kredensial, Portal Verifikasi) dipetakan ke teknologi ini. | To Do           |
+| T2  | Setup Project Repository & CI/CD Pipeline Outline. Inisialisasi struktur direktori `src/`. Tentukan strategi pipeline CI/CD dasar (alat, tahapan) untuk didokumentasikan dalam file baru, mis., `vibe-guide/cicd-strategy.md`.                                   | Jules                    | Direktori `src/` memiliki sub-folder dasar (mis., `mobile-app/`, `backend/`, `blockchain/`). `vibe-guide/cicd-strategy.md` dibuat dan menguraikan toolchain CI/CD yang diusulkan dan tahapan dasar (mis., lint, test, build, deploy).        | To Do           |
+| T3  | Develop Detailed User Persona & MVP User Flow Diagrams. Perluas persona pengguna di `spesifikasi-produk.md` dengan poin masalah dan motivasi yang lebih detail. Buat diagram alur pengguna visual untuk fitur rilis MVP (pendaftaran UMKM, penerbitan kredensial dasar, verifikasi dasar). Simpan diagram di direktori baru `memory-bank/user_flows/`. | Samuel Marcoferis Ngariady | Detail persona yang diperbarui di `spesifikasi-produk.md` atau dokumen tertaut baru. Setidaknya 3 diagram alur pengguna (mis., PNG, SVG) ada di `memory-bank/user_flows/` yang mencakup pendaftaran MVP, penerbitan, dan verifikasi. | To Do           |
 
 ## Saran Teknis / Peringatan Risiko
-- (Saran atau peringatan dari Arsitek atau AI)
+- Prioritaskan desain modular dalam `architecture.md` untuk memungkinkan operasi independen atau adaptasi untuk pasar Indonesia dan Cina, dengan mempertimbangkan potensi perbedaan regulasi (seperti yang dicatat di bagian risiko `proposal.md`).
+- Untuk T2, Jules harus mengusulkan penyiapan CI/CD yang sederhana dan skalabel pada awalnya.
